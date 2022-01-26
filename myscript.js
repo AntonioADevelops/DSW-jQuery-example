@@ -6,4 +6,18 @@ $(document).ready(function() {
 	$("#imagetoggler").click(function(){
 		$("img").toggle();
 	});
+	$("#p1").click(function(){
+		$(".disappear").hide();	
+	});
+	$("#p1").on({
+		mouseenter: function(){
+		  $(this).css("background-color", "lightgray");
+		},  
+		mouseleave: function(){
+		  $(this).css("background-color", "lightblue");
+		}, 
+		click: function(){
+		  $(this).css("background-color", "yellow");
+		}  
+	  });
 });
